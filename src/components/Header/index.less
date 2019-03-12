@@ -1,0 +1,36 @@
+@import "../../style/default.less";
+
+.header{
+  height: 100px;
+  position: relative;
+  .headerTop{
+    text-align: right;
+    height: 60px;
+    border-bottom:1px solid @colorV;
+    p{
+      display: inline-block;
+      line-height: 60px;
+    }
+
+    a{
+      margin: 0 20px 0 40px;
+      line-height: 60px;
+        color: @colorV;
+    }
+  }
+  .headerBottom{
+    height: 41px;
+    text-align: right;
+    .breadCrumb{
+      display: inline-block;
+      position: absolute;
+      left: 40px;
+      top: 70px;
+    }
+    .time{
+      display: inline-block;
+
+    }
+  }
+
+}
