@@ -3,6 +3,7 @@
 .header{
   height: 100px;
   position: relative;
+  background-color: @colorM;
   .headerTop{
     text-align: right;
     height: 60px;
@@ -21,15 +22,36 @@
   .headerBottom{
     height: 41px;
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px ;
     .breadCrumb{
       display: inline-block;
-      position: absolute;
-      left: 40px;
-      top: 70px;
+      width: 180px;
+      text-align: center;
+      font-size: 18px;
+      position: relative;
+      &:before{
+        content: ' ';
+        border-top: 10px solid @colorM;
+        border-left:12px solid @colorL ;
+        border-right:12px solid @colorL ;
+        position: absolute;
+        top: 30px;
+        left: 78px;
+      }
     }
     .time{
-      display: inline-block;
-
+      display: flex;
+      align-items: center;
+      & :nth-child(2){
+        margin-left: 10px;
+      }
+      img{
+        width: 21px;
+        height: 15px;
+        margin-right: 5px;
+      }
     }
   }
 

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./App.less";
+import "./Admin.less";
 import { Col, Row } from "antd";
 import NavLeft from "./components/NavLeft";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "antd/dist/antd.min.css"
-class App extends Component {
+class Admin extends Component {
   render() {
     return (
       <>
@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Admin;
