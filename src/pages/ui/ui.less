@@ -20,4 +20,53 @@
 .messages button{
   margin-right: 10px;
 }
+.gallery{
+  column-count:5;
+  column-gap: 10px;
+  :global(.ant-card){
+    width: fit-content;
+    height: fit-content;
+    break-inside: avoid;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1366px) {
+  .gallery{
+    column-count:4;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery{
+    column-count:3;
+  }
+}
+@media (max-width: 900px) {
+  .gallery{
+    column-count:2;
+  }
+}
+@media (max-width: 600px) {
+  .gallery{
+    column-count:1;
+  }
+}
+.carousel{
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+}
+.imgCarousel{
+  img{
+    width: fit-content;
+    height: 20vh;
+  }
+}
 

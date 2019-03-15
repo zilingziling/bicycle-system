@@ -10,6 +10,11 @@ import Modals from "../pages/ui/modals";
 import Loadings from "../pages/ui/loadings";
 import Notice from '../pages/ui/notification'
 import Messages from "../pages/ui/message";
+import TabPage from "../pages/ui/tabs";
+import Gallery from "../pages/ui/gallery";
+import CarouselPage from "../pages/ui/carousel";
+import FormLogin from "../pages/form/login";
+import RegisterForm from "../pages/form/registerForm";
 export default class MyRouter extends Component {
   render() {
     return (
@@ -27,6 +32,12 @@ export default class MyRouter extends Component {
                       <Route path='/ui/loadings' component={Loadings}/>
                       <Route path='/ui/notification' component={Notice}/>
                       <Route path='/ui/messages' component={Messages}/>
+                      <Route path='/ui/tabs' component={TabPage}/>
+                      <Route path='/ui/gallery' component={Gallery}/>
+                      <Route path='/ui/carousel' component={CarouselPage}/>
+                      <Route path='/form/login' component={FormLogin}/>
+                      <Route path='/form/reg' component={RegisterForm}/>
+
                       <Route component={NoMatch} />
                 </Switch>
               </Admin>
