@@ -15,6 +15,7 @@ import Gallery from "../pages/ui/gallery";
 import CarouselPage from "../pages/ui/carousel";
 import FormLogin from "../pages/form/login";
 import RegisterForm from "../pages/form/registerForm";
+import Basic from "../pages/table/basic";
 export default class MyRouter extends Component {
   render() {
     return (
@@ -37,7 +38,7 @@ export default class MyRouter extends Component {
                       <Route path='/ui/carousel' component={CarouselPage}/>
                       <Route path='/form/login' component={FormLogin}/>
                       <Route path='/form/reg' component={RegisterForm}/>
-
+                      <Route path='/table/basic' component={Basic}/>
                       <Route component={NoMatch} />
                 </Switch>
               </Admin>
