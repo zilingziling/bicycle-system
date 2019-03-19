@@ -16,9 +16,9 @@ export default class CarouselPage extends Component {
             </Card>
                 <Card title='图片轮播' className='imgCarousel'>
                     <Carousel autoplay>
-                        <img src='/carousel-img/carousel-1.jpg' />
-                        <img src='/carousel-img/carousel-2.jpg' />
-                        <img src='/carousel-img/carousel-3.jpg' />
+                        <img src='/carousel-img/carousel-1.jpg' alt='img'/>
+                        <img src='/carousel-img/carousel-2.jpg' alt='img'/>
+                        <img src='/carousel-img/carousel-3.jpg' alt='img'/>
                     </Carousel>
                 </Card>
                 </>
