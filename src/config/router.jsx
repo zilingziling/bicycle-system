@@ -16,6 +16,8 @@ import CarouselPage from "../pages/ui/carousel";
 import FormLogin from "../pages/form/login";
 import RegisterForm from "../pages/form/registerForm";
 import Basic from "../pages/table/basic";
+import RichText from "../pages/richText";
+import HighLevelTable from "../pages/table/highLevelTable";
 export default class MyRouter extends Component {
   render() {
     return (
@@ -39,6 +41,8 @@ export default class MyRouter extends Component {
                       <Route path='/form/login' component={FormLogin}/>
                       <Route path='/form/reg' component={RegisterForm}/>
                       <Route path='/table/basic' component={Basic}/>
+                      <Route path='/table/high' component={HighLevelTable}/>
+                      <Route path='/rich' component={RichText}/>
                       <Route component={NoMatch} />
                 </Switch>
               </Admin>

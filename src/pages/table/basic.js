@@ -33,17 +33,53 @@ export default class Basic extends Component {
       {
         title: "性别",
         key: "sex",
-        dataIndex: "sex"
+        render(text,record,index){
+            if(text.sex===1)
+                return '男'
+            else return "女"
+        }
       },
       {
         title: "状态",
         key: "state",
-        dataIndex: "state"
+        render(text, record, index) {
+            switch (text.state) {
+                case 1:
+                    return "咸鱼一条"
+                case 2:
+                    return "风华浪子"
+                case 3:
+                    return "创业者"
+                case 4:
+                    return "CEO"
+                case 5:
+                    return "职场萌新"
+            }
+        }
       },
       {
         title: "爱好",
         key: "interest",
-        dataIndex: "interest"
+          render(text, record, index) {
+              switch (text.state) {
+                  case 1:
+                      return "享受世界各地美食"
+                  case 2:
+                      return "看遍世界各地风景"
+                  case 3:
+                      return "追剧追星追综艺"
+                  case 4:
+                      return "穿衣搭配"
+                  case 5:
+                      return "摄影"
+                  case 6:
+                      return "看书看电影"
+                  case 7:
+                      return "平面设计"
+                  case 8:
+                      return "室内设计"
+              }
+          }
       },
       {
         title: "生日",
@@ -66,6 +102,12 @@ export default class Basic extends Component {
       <div>
         <Card title="基础表格">
           <Table bordered columns={columns} dataSource={basicTable} rowKey='id' />
+        </Card>
+        <Card title="Mock-单选">
+          <Table bordered columns={columns} dataSource={basicTable} rowKey='id' rowSelection={{type:'radio'}}/>
+        </Card>
+        <Card title="Mock-多选">
+          <Table bordered columns={columns} dataSource={basicTable} rowKey='id' rowSelection={{type:'checkbox'}}/>
         </Card>
       </div>
     );
