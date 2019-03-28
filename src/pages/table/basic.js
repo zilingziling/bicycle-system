@@ -65,7 +65,7 @@ export default class Basic extends Component {
         return (
       <div>
         <Card title="基础表格">
-          <Table bordered columns={columns} dataSource={basicTable} rowKey='id'/>
+          <Table bordered columns={columns} dataSource={basicTable} rowKey='id' />
         </Card>
       </div>
     );
