@@ -141,19 +141,16 @@ export default class HighLevelTable extends Component {
         key: "state",
           width:200,
         render(text, record, index) {
-          switch (text.state) {
-            case 1:
-              return "咸鱼一条";
-            case 2:
-              return "风华浪子";
-            case 3:
-              return "创业者";
-            case 4:
-              return "CEO";
-            case 5:
-              return "职场萌新";
+            const config={
+                "1":"咸鱼一条",
+                "2":"名校毕业",
+                "3":'风华浪子',
+                "4":"×二代",
+                "5":"二次元"
+            }
+            return config[text.state]
           }
-        }
+
       },
 
       {
@@ -291,7 +288,7 @@ export default class HighLevelTable extends Component {
     ];
     return (
       <>
-       
+
         <Card title="左侧固定">
           <Table
             dataSource={highLevelTable}
